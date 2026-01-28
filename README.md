@@ -6,10 +6,10 @@
 
 ```
 // React
-npm i @paper-design/shaders-react
+npm i @pumpn/shaders-react
 
 // vanilla
-npm i @paper-design/shaders
+npm i @pumpn/shaders
 
 // Please pin your dependency – we will ship breaking changes under 0.0.x versioning
 ```
@@ -21,7 +21,7 @@ npm i @paper-design/shaders
 ### React example
 
 ```jsx
-import {MeshGradient, DotOrbit} from '@paper-design/shaders-react';
+import {MeshGradient, DotOrbit} from '@pumpn/shaders-react';
 
 <MeshGradient
     colors={['#5100ff', '#00ff80', '#ffcc00', '#ea00ff']}
@@ -61,8 +61,8 @@ import {MeshGradient, DotOrbit} from '@paper-design/shaders-react';
 
 ### Framework support:
 
-- Vanilla JS ([@paper-design/shaders](https://www.npmjs.com/package/@paper-design/shaders))
-- React JS ([@paper-design/shaders-react](https://www.npmjs.com/package/@paper-design/shaders-react))
+- Vanilla JS ([@pumpn/shaders](https://www.npmjs.com/package/@pumpn/shaders))
+- React JS ([@pumpn/shaders-react](https://www.npmjs.com/package/@pumpn/shaders-react))
 - Vue and others: intent to accept community PRs in the future
 
 ## Release notes

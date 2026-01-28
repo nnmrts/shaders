@@ -10,7 +10,7 @@ import {
   defaultObjectSizing,
   DitheringTypes,
   type ImageShaderPreset,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface ImageDitheringProps extends ShaderComponentProps, ImageDitheringParams {
   /** @deprecated use `size` instead */

@@ -7,7 +7,7 @@ import {
   type PaperShaderElement,
   type ShaderMotionParams,
   type ShaderMountUniforms,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 import { useMergeRefs } from './use-merge-refs.js';
 import { setMinImageSize } from './set-min-image-size.js';
 

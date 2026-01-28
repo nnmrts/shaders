@@ -10,7 +10,7 @@ import {
   type ImageShaderPreset,
   getShaderColorFromString,
   LiquidMetalShapes,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 import { transparentPixel } from '../transparent-pixel.js';
 import { suspend } from '../suspend.js';
 

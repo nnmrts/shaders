@@ -9,7 +9,7 @@ import {
   type SimplexNoiseParams,
   type ShaderPreset,
   defaultPatternSizing,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface SimplexNoiseProps extends ShaderComponentProps, SimplexNoiseParams {}
 

@@ -9,7 +9,7 @@ import {
   type WavesParams,
   type WavesUniforms,
   type ShaderPreset,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface WavesProps extends ShaderComponentProps, WavesParams {}
 

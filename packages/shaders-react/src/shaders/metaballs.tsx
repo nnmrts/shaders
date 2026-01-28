@@ -10,7 +10,7 @@ import {
   type MetaballsParams,
   type MetaballsUniforms,
   type ShaderPreset,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface MetaballsProps extends ShaderComponentProps, MetaballsParams {}
 

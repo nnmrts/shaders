@@ -10,7 +10,7 @@ import {
   GlassGridShapes,
   type ImageShaderPreset,
   getShaderColorFromString,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface FlutedGlassProps extends ShaderComponentProps, FlutedGlassParams {
   /** @deprecated use `size` instead */

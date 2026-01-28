@@ -10,8 +10,8 @@ import {
   type PulsingBorderParams,
   type PulsingBorderUniforms,
   type ShaderPreset,
-} from '@paper-design/shaders';
-import { PulsingBorderAspectRatios } from '@paper-design/shaders';
+} from '@pumpn/shaders';
+import { PulsingBorderAspectRatios } from '@pumpn/shaders';
 
 export interface PulsingBorderProps extends ShaderComponentProps, PulsingBorderParams {}
 

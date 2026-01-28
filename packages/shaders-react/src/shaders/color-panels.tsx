@@ -9,7 +9,7 @@ import {
   type ColorPanelsParams,
   type ShaderPreset,
   defaultObjectSizing,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface ColorPanelsProps extends ShaderComponentProps, ColorPanelsParams {}
 

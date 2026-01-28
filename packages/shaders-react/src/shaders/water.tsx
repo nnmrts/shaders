@@ -9,7 +9,7 @@ import {
   type WaterParams,
   defaultObjectSizing,
   type ImageShaderPreset,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface WaterProps extends ShaderComponentProps, WaterParams {
   /** @deprecated use `size` instead */

@@ -11,7 +11,7 @@ import {
   defaultObjectSizing,
   type ImageShaderPreset,
   HalftoneCmykTypes,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface HalftoneCmykProps extends ShaderComponentProps, HalftoneCmykParams {}
 

@@ -9,7 +9,7 @@ import {
   type ShaderPreset,
   type SpiralParams,
   type SpiralUniforms,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface SpiralProps extends ShaderComponentProps, SpiralParams {}
 

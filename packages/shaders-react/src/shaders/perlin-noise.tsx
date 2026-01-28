@@ -9,7 +9,7 @@ import {
   type PerlinNoiseParams,
   type PerlinNoiseUniforms,
   type ShaderPreset,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface PerlinNoiseProps extends ShaderComponentProps, PerlinNoiseParams {}
 

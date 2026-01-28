@@ -11,7 +11,7 @@ import {
   type ImageShaderPreset,
   HalftoneDotsTypes,
   HalftoneDotsGrids,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface HalftoneDotsProps extends ShaderComponentProps, HalftoneDotsParams {}
 
