@@ -23,5 +23,7 @@
   "scripts": {
     "type-check": "tsc --project tsconfig.json"
   },
-  "dependencies": {}
+  "dependencies": {
+    "culori": "^4.0.2"
+  }
 }
