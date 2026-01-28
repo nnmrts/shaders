@@ -21,7 +21,9 @@ vec3 linearToSrgb(vec3 linear) {
 }
 
 // Display P3 color space conversions
-// Display P3 uses the same transfer function as sRGB (gamma 2.2 approximation)
+// Display P3 uses the same transfer function as sRGB
+// Note: We use gamma 2.2 approximation here instead of the precise sRGB transfer function
+// which has a linear segment near zero. This approximation is sufficient for shader rendering.
 vec3 displayP3ToLinear(vec3 p3) {
   return pow(p3, vec3(2.2));
 }

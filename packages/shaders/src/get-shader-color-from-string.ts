@@ -21,7 +21,7 @@ export function getShaderColorFromString(
   const parsed = parse(colorString);
   
   if (!parsed) {
-    console.error('Unsupported color format', colorString);
+    console.warn('Unsupported color format', colorString);
     return fallbackColor;
   }
 
@@ -30,7 +30,7 @@ export function getShaderColorFromString(
   const rgb = toRgb(parsed);
   
   if (!rgb) {
-    console.error('Failed to convert color to RGB', colorString);
+    console.warn('Failed to convert color to RGB', colorString);
     return fallbackColor;
   }
 
