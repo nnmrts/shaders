@@ -1,6 +1,12 @@
 # Paper Shaders
 
-> **Note:** This is a fork of the original [Paper Shaders](https://github.com/paper-design/shaders) by [Lost Coast Labs](http://paper.design). This fork adds support for Display P3 color space and modern CSS color formats (OkLab, OkLCH) while maintaining compatibility with the original project.
+> **⚠️ IMPORTANT LICENSE NOTICE:**  
+> This is a fork of the original [Paper Shaders](https://github.com/paper-design/shaders) by [Lost Coast Labs](http://paper.design).  
+> 
+> **The original project uses the PolyForm Shield License which contains a Noncompete clause.**  
+> Publishing this fork to npm may violate the license terms. See [LICENSE COMPLIANCE](#license-compliance) below for details.
+
+> **Note:** This fork adds support for Display P3 color space and modern CSS color formats (OkLab, OkLCH) while maintaining compatibility with the original project.
 
 ![mesh-gradient-shader](./docs/public/images/git-readme-picture.webp)
 
@@ -85,6 +91,56 @@ import {MeshGradient, DotOrbit} from '@pumpn/shaders-react';
 1. Bump the version numbers as desired manually
 2. Use `bun run build` on the top level of the monorepo to build each package
 3. Use `bun run publish-all` to publish all (or `bun run publish-all-test` to do a dry run). You can do this even if you just bumped one package version. The others will fail to publish and continue.
+
+## License Compliance
+
+### ⚠️ Critical: Noncompete Clause
+
+The original Paper Shaders project uses the **PolyForm Shield License 1.0.0**, which includes a **Noncompete clause** (see LICENSE file, lines 52-56):
+
+> "Any purpose is a permitted purpose, except for providing any product that competes with the software or any product the licensor or any of its affiliates provides using the software."
+
+### What This Means for Publishing
+
+**Publishing this fork to npm as `@pumpn/shaders` may violate the license** because:
+
+1. It provides the same functionality as the original packages
+2. It can be used as a drop-in replacement
+3. The license defines "compete" broadly - even free libraries compete with each other
+4. The license explicitly states: "If you market a product as a practical substitute for the software...it definitely competes"
+
+### Recommended Actions
+
+**Before publishing to npm, you should:**
+
+1. **Contact Lost Coast Labs** for explicit written permission
+   - Website: http://paper.design
+   - Original repo: https://github.com/paper-design/shaders
+
+2. **OR: Contribute back to the original project**
+   - Submit PRs with Display P3 support
+   - Submit PRs with OkLab/OkLCH support
+   - This benefits everyone and avoids license conflicts
+
+3. **Private/Internal use IS allowed:**
+   - Using this fork in your own projects ✅
+   - Using it in your company's internal projects ✅
+   - Modifying and extending for personal use ✅
+
+### What the License DOES Allow
+
+✅ Use the software  
+✅ Make modifications  
+✅ Create derivative works  
+✅ Use in your own projects (non-competing)  
+
+### What the License PROHIBITS
+
+❌ Publishing competing products to npm  
+❌ Marketing as an alternative to Paper Shaders  
+❌ Providing it as a service that competes  
+
+**For full license details, see the [LICENSE](./LICENSE) file.**
 
 ## License and use
 
