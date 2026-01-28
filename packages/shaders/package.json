@@ -1,6 +1,6 @@
 {
   "name": "@pumpn/shaders",
-  "version": "0.0.71",
+  "version": "0.1.0",
   "license": "SEE LICENSE IN https://github.com/nnmrts/shaders/blob/main/LICENSE",
   "type": "module",
   "sideEffects": false,

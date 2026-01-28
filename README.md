@@ -1,6 +1,17 @@
 # Paper Shaders
 
+> **Note:** This is a fork of the original [Paper Shaders](https://github.com/paper-design/shaders) by [Lost Coast Labs](http://paper.design). This fork adds support for Display P3 color space and modern CSS color formats (OkLab, OkLCH) while maintaining compatibility with the original project.
+
 ![mesh-gradient-shader](./docs/public/images/git-readme-picture.webp)
+
+## About This Fork
+
+This fork extends the original Paper Shaders with:
+- ✨ **Display P3 Color Space Support**: Automatic detection and use of wide color gamut on supported displays
+- 🎨 **Modern CSS Color Formats**: Support for `oklab()`, `oklch()`, and `color(display-p3)` color functions
+- 📦 **Culori Integration**: Using the well-tested [culori](https://culorijs.org/) library for robust color conversions
+
+All original features and shader components are preserved. This fork is published under the `@pumpn` npm scope.
 
 ### Getting started
 
@@ -11,7 +22,7 @@ npm i @pumpn/shaders-react
 // vanilla
 npm i @pumpn/shaders
 
-// Please pin your dependency – we will ship breaking changes under 0.0.x versioning
+// Please pin your dependency – we will ship breaking changes under 0.x.x versioning
 ```
 
 ### Documentation
@@ -86,3 +97,15 @@ We ask that you link to Paper Shaders if you use this code (it helps us continue
 [Read the full license →](./LICENSE)
 
 Required Notice: Copyright Lost Coast Labs, Inc. (http://paper.design)
+
+---
+
+## Attribution
+
+This fork is based on [Paper Shaders](https://github.com/paper-design/shaders) by Lost Coast Labs, Inc.
+
+**Original Project**: https://github.com/paper-design/shaders  
+**Original Documentation**: https://shaders.paper.design/  
+**Original License**: PolyForm Shield License
+
+Additional features and modifications in this fork are maintained by the [@pumpn](https://github.com/nnmrts/shaders) community.
