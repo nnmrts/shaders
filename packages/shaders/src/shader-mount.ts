@@ -93,6 +93,20 @@ export class ShaderMount {
     }
     this.gl = gl;
 
+    // Automatically detect and use Display P3 color space if supported
+    if ('drawingBufferColorSpace' in gl) {
+      try {
+        // Check if the display supports wide color gamut (P3)
+        const supportsP3 = window.matchMedia('(color-gamut: p3)').matches;
+        if (supportsP3) {
+          gl.drawingBufferColorSpace = 'display-p3';
+        }
+      } catch (e) {
+        // If setting the color space fails, just continue with sRGB
+        console.warn('Failed to set Display P3 color space:', e);
+      }
+    }
+
     this.initProgram();
     this.setupPositionAttribute();
     // Grab the locations of the uniforms in the fragment shader

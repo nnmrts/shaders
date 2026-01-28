@@ -1,6 +1,7 @@
 export const ShaderColorSpaces = {
   rgb: 0,
   oklch: 1,
+  displayP3: 2,
 } as const;
 
 export type ShaderColorSpace = keyof typeof ShaderColorSpaces;
@@ -17,6 +18,46 @@ vec3 srgbToLinear(vec3 srgb) {
 
 vec3 linearToSrgb(vec3 linear) {
   return pow(linear, vec3(1.0 / 2.2));
+}
+
+// Display P3 color space conversions
+// Display P3 uses the same transfer function as sRGB (gamma 2.2 approximation)
+vec3 displayP3ToLinear(vec3 p3) {
+  return pow(p3, vec3(2.2));
+}
+
+vec3 linearToDisplayP3(vec3 linear) {
+  return pow(linear, vec3(1.0 / 2.2));
+}
+
+// Convert linear sRGB to linear Display P3
+vec3 linearSrgbToLinearP3(vec3 lrgb) {
+  mat3 srgbToP3 = mat3(
+    0.8224621, 0.0331941, 0.0170827,
+    0.1775380, 0.9668058, 0.0723974,
+    0.0000000, 0.0000000, 0.9105199
+  );
+  return srgbToP3 * lrgb;
+}
+
+// Convert linear Display P3 to linear sRGB
+vec3 linearP3ToLinearSrgb(vec3 lp3) {
+  mat3 p3ToSrgb = mat3(
+    1.2249401, -0.0420569, -0.0196376,
+    -0.2249404, 1.0420571, -0.0786361,
+    0.0000000, 0.0000000, 1.0982735
+  );
+  return p3ToSrgb * lp3;
+}
+
+// Convert sRGB to Display P3
+vec3 srgbToDisplayP3(vec3 srgb) {
+  return linearToDisplayP3(linearSrgbToLinearP3(srgbToLinear(srgb)));
+}
+
+// Convert Display P3 to sRGB
+vec3 displayP3ToSrgb(vec3 p3) {
+  return linearToSrgb(linearP3ToLinearSrgb(displayP3ToLinear(p3)));
 }
 
 vec3 LrgbToOklab(vec3 rgb) {
