@@ -10,7 +10,7 @@ import {
   type GodRaysParams,
   type GodRaysUniforms,
   type ShaderPreset,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface GodRaysProps extends ShaderComponentProps, GodRaysParams {}
 

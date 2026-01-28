@@ -1,9 +1,9 @@
-# @paper-design/shaders-react
+# @pumpn/shaders-react
 
 ## Usage
 
 ```
-import { MeshGradient, DotOrbit } from '@paper-design/shaders-react';
+import { MeshGradient, DotOrbit } from '@pumpn/shaders-react';
 
 <MeshGradient
     colors={['#5100ff', '#00ff80', '#ffcc00', '#ea00ff']}
@@ -26,4 +26,4 @@ import { MeshGradient, DotOrbit } from '@paper-design/shaders-react';
 
 ## Release notes
 
-[View changelog →](https://github.com/paper-design/shaders/blob/main/CHANGELOG.md)
+[View changelog →](https://github.com/nnmrts/shaders/blob/main/CHANGELOG.md)

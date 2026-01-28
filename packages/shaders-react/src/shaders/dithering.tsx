@@ -10,8 +10,8 @@ import {
   defaultPatternSizing,
   defaultObjectSizing,
   DitheringTypes,
-} from '@paper-design/shaders';
-import { DitheringShapes } from '@paper-design/shaders';
+} from '@pumpn/shaders';
+import { DitheringShapes } from '@pumpn/shaders';
 
 export interface DitheringProps extends ShaderComponentProps, DitheringParams {
   /** @deprecated use `size` instead */

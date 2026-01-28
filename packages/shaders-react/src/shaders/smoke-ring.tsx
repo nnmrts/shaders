@@ -10,7 +10,7 @@ import {
   type ShaderPreset,
   type SmokeRingParams,
   type SmokeRingUniforms,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface SmokeRingProps extends ShaderComponentProps, SmokeRingParams {}
 

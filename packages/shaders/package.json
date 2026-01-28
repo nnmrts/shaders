@@ -1,7 +1,7 @@
 {
-  "name": "@paper-design/shaders",
-  "version": "0.0.71",
-  "license": "SEE LICENSE IN https://github.com/paper-design/shaders/blob/main/LICENSE",
+  "name": "@pumpn/shaders",
+  "version": "0.1.0",
+  "license": "SEE LICENSE IN https://github.com/nnmrts/shaders/blob/main/LICENSE",
   "type": "module",
   "sideEffects": false,
   "publishConfig": {
@@ -23,5 +23,7 @@
   "scripts": {
     "type-check": "tsc --project tsconfig.json"
   },
-  "dependencies": {}
+  "dependencies": {
+    "culori": "^4.0.2"
+  }
 }

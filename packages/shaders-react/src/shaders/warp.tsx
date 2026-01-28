@@ -11,7 +11,7 @@ import {
   type WarpUniforms,
   type ShaderPreset,
   WarpPatterns,
-} from '@paper-design/shaders';
+} from '@pumpn/shaders';
 
 export interface WarpProps extends ShaderComponentProps, WarpParams {}
 
