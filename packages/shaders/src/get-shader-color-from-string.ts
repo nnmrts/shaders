@@ -234,10 +234,10 @@ function displayP3ToSrgb(p3: [number, number, number]): [number, number, number]
   const lg = -0.2249404 * linearP3[0]! + 1.0420571 * linearP3[1]! - 0.0786361 * linearP3[2]!;
   const lb = 0.0000000 * linearP3[0]! + 0.0000000 * linearP3[1]! + 1.0982735 * linearP3[2]!;
   
-  // Convert linear sRGB to sRGB
-  const r = Math.pow(lr, 1.0 / 2.2);
-  const g = Math.pow(lg, 1.0 / 2.2);
-  const b = Math.pow(lb, 1.0 / 2.2);
+  // Convert linear sRGB to sRGB (clamp to avoid NaN from negative values)
+  const r = Math.pow(Math.max(0, lr), 1.0 / 2.2);
+  const g = Math.pow(Math.max(0, lg), 1.0 / 2.2);
+  const b = Math.pow(Math.max(0, lb), 1.0 / 2.2);
   
   return [r, g, b];
 }
